@@ -1,0 +1,105 @@
+.square{
+    height: 34px;
+    width: 34px;
+    border: 2px black SOLID;
+    background-color: yellow;
+    background-repeat: repeat-x;
+    float: left;
+    margin-right: 5px;
+    display: block;
+
+    
+}
+.square2{
+    height: 34px;
+    width: 34px;
+    border: 2px black SOLID;
+    background-color: rgb(183, 224, 245);
+    /* background-repeat: repeat-x; */
+    float: left;
+    margin-right: 5px;
+    display: block;
+
+    
+}
+.ex2{
+}
+.square:nth-child(2n){
+    background-color: rgb(33, 175, 33);
+    transform: translate(0px, 20px);
+}
+.containerEx2{
+   
+}
+.rectangle:nth-child(2n){
+
+        height: 34px;
+        width: 64px;
+        border: 2px black SOLID;
+        background-color:red;
+        float: left;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    
+        
+    
+}
+.rectangle:nth-child(2n+1){
+display: none;
+}
+
+td{
+    height: 30px;
+    width: 30px;
+    text-align: left;
+    
+    
+}
+
+tr:first-child td:nth-child(-n+3),
+tr:first-child td:nth-child(n+7),
+tr:nth-child(3) td:nth-child(-n+3),
+tr:nth-child(3) td:nth-child(n+7) {
+    background-color: rgb(40, 186, 38);
+}
+
+tr:nth-child(2) td:nth-child(-n+3),
+tr:nth-child(2) td:nth-child(n+7) {
+    background-color: rgb(38, 45, 186); 
+}
+
+tr:nth-child(3) td:nth-child(n+4):nth-child(-n+6),
+tr:nth-child(1) td:nth-child(n+4):nth-child(-n+6) {
+    background-color: rgb(38, 45, 186);   
+}
+
+tr:nth-child(2) td:nth-child(n+4):nth-child(-n+6) {
+    background-color: rgb(40, 186, 38);
+}
+/* Select All But The First Five */
+
+/* .square2:nth-child(n+8){
+    background-color: rgb(240, 184, 63);
+} */
+/* Select Only The First Five */
+/* .square2:nth-child(n+8){
+    background-color: rgb(240, 184, 63);
+} */
+
+/* Select Every Fourth, Starting At The First*/
+/* .square2:nth-child(5n+2){
+    background-color: rgb(240, 184, 63);
+} */
+
+/* Select The Last 5 elements */
+/* .square2:nth-child(n+8){
+    background-color: rgb(240, 184, 63);
+}  */
+
+/*Select the Second to Last Element*/
+.square2:nth-child(n+5):nth-child(-n+12){
+    background-color: rgb(240, 184, 63);
+}  
+
+ 
